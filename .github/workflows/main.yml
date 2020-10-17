@@ -3,11 +3,10 @@ name: xinquji-weekly
 # https://docs.github.com/cn/free-pro-team@latest/actions/reference/events-that-trigger-workflows#%E5%AE%89%E6%8E%92%E7%9A%84%E4%BA%8B%E4%BB%B6
 on:
   schedule:
-    - cron: '*/5 * * * *'
-    # - cron: '1 0 * * 1'
+    - cron: '1 0 * * 5' # 每周5
 
 jobs:
-  fetch-top-posts:
+  fetch-posts:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
