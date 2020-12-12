@@ -4,7 +4,7 @@ const getContents = async () => {
   console.log('start fetching headlines');
   try {
     const { data } = await axios.get(
-      'https://top-api.lokibai.com/?target=xinquji'
+      'https://top-api.lokibai.vercel.app/?target=xinquji'
     );
     console.log('data', data);
     const contents = data.list
